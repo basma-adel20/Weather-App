@@ -1,0 +1,199 @@
+
+body{
+    background-color: #1E202B;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: 0 0 0 transparent;
+}
+
+.navbar{
+    padding: 0px;
+}
+
+.nav-link , .logo {
+    color: #fff !important;
+}
+
+.logo h1{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.logo h6{
+    font-size: 10px;
+    font-weight: 400;
+    color:  #BFC1C8;
+}
+
+.nav-item .nav-link:hover , .active{
+    border-color: #009ad8 !important;
+    color: #009ad8 !important;
+}
+
+.nav-item .nav-link{
+    padding: 5px 25px !important;
+    font-size: 14px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    color: white;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    font-weight: 400;
+}
+
+
+/****************************************************************************/
+
+.gray ,#min-degree , .copy{
+    color: #BFC1C8;
+}
+
+footer{
+    background-color: #262936;
+}
+
+footer .subsrcribe input{
+    width: 100%;
+    padding: 20px 50px 20px 20px;
+    background: #1e202b;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    font-size: 14px;
+}
+
+footer .subsrcribe button{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    padding: 10px 20px;
+    border: none;
+    background: #009ad8;
+    border-radius: 30px;
+    color: white;
+}
+
+.copy{
+    font-size: 14px;
+}
+
+
+.media .icon .ico-circle{
+    display: block;
+    height: 40px;
+    width: 40px;
+    font-size: 2rem;
+    border-radius: 50%;
+    line-height: 1.55;
+    margin: 0 auto;
+    text-align: center;
+    transition: all 500ms ease;
+    background-color: #1e202b;;
+
+}
+
+.media .icon:hover  .ico-circle{
+    background-color: #009AD8;
+
+}
+
+.media .icon:hover i{
+    color: #fff;
+}
+.media .ico-circle i{
+    font-size: 20px;
+    color: #009ad8;
+    transition: all 500ms ease;
+}
+
+@media (min-width: 1200px){
+    .container {
+       width: 1170px;
+    }
+    
+    }
+    
+    @media screen and (max-width: 991.5px)
+    {
+        .nav-item .nav-link:hover , .active{
+            border-color: transparent !important;
+            color: #009ad8 !important;
+        }
+    
+        .navbar-nav{
+            text-align: center;
+            background-color: #262936;
+            border-radius: 10px;
+    
+        }
+        .nav-item .nav-link{
+            padding: 20px !important;
+        }
+        .nav-item 
+        {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    }
+
+/****************************************************************************************/
+.header{
+    background: #262936;
+    border-radius: 40px;
+    padding: 20px 30px;
+    font-size: 14px;
+}
+
+.details {
+    background: #262936;
+    border-radius: 10px;
+}
+
+p{
+    margin-bottom: 0;
+    color: #BFC1C8;
+    font-size: 14px;
+}
+
+.contact i{
+    color: #009AD8;
+}
+
+
+.email input, textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    color: white;
+    border: 2px solid #393c48;
+    background: transparent;
+    border-radius: 30px;
+    outline: none;
+    font-size: 14px;
+}
+
+input:hover , textarea:hover , input:focus , textarea:focus{
+    border: 2px solid #009ad8;
+
+}
+
+.email textarea{
+    min-height: 150px;
+}
+
+.contact button{
+    border: none;
+    background: #009ad8;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: white;
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="shortcut icon" href="images/cloud-sun-solid.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg my-5">
+        <div class="container">
+          <a class="navbar-brand d-flex" href="index.html">
+            <img src="images/logo@2x.png" alt="logo" width="64" height="38">
+            <div class="logo ms-3">
+                <h1>Weather</h1>
+                <h6>Today's weather</h6>
+            </div>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item ms-2">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item ms-2">
+                <a class="nav-link" href="#">News</a>
+              </li>
+              <li class="nav-item ms-2">
+                <a class="nav-link" href="#">Live cameras</a>
+              </li>
+              <li class="nav-item ms-2">
+                <a class="nav-link" href="#">Photos</a>
+              </li>
+              <li class="nav-item ms-2">
+                <a class="nav-link" href="assets/contact.html">Contact</a>
+              </li>             
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+    <div class="background">
+        <div class="container">
+            <div class="search position-relative">
+                <input type="text" placeholder="Find your location..." id="searchName">
+                <button type="submit" id="submit">Find</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="weather text-white">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-lg-4">
+                    <div class="first-day">
+                        <div class="header d-flex p-2 gray">
+                            <span id="day">
+                            </span>
+                            <span id="date" class="ms-auto">
+                            </span>
+                        </div>
+                        <div class="content p-3 gray">
+                            <span id="location">
+                            </span>
+                            <div class="heat text-white">
+                                <span id="degree">                                    
+                                </span>
+                                <img src="images/122.png" alt="" width="90">
+                            </div>
+                            <p class="status"></p>
+                            <div class="details">
+                                <span class="rain me-4">
+                                </span>
+                                <span class="wind me-4">
+                                </span>
+                                <span class="compass">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="second-day text-center">
+                        <div class="header p-2 gray">
+                            <span id="day">
+                            </span>
+                        </div>
+                        <div class="content gray">
+                            <div class="heat text-white d-flex flex-column align-items-center">
+                                <img src="images/122.png" alt="" width="48">
+                                <span id="degree">
+                                </span>
+                                <span id="min-degree">
+                                </span>
+                                <p class="status"></p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="third-day text-center">
+                        <div class="header p-2 gray">
+                            <span id="day">
+                            </span>
+                        </div>
+                        <div class="content gray">
+                            <div class="heat text-white d-flex flex-column align-items-center">
+                                <img src="images/113 (1).png" alt="" width="48">
+                                <span id="degree">
+                                </span>
+                                <span id="min-degree">
+                                </span>
+                                <p class="status"></p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="p-5">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-8">
+                    <div class="subsrcribe position-relative">
+                        <input id="email" type="text" placeholder="Enter your email to subscribe...">
+                         <button type="submit" id="subscribe">Subscribe</button>
+                    </div>
+                </div>
+                <div class="col-md-3 offset-1">
+                    <div class="media d-flex">
+                        <div class="icon">
+                          <div class="service-ico mb-2 ">
+                            <span class="ico-circle d-flex justify-content-center align-items-center me-2"><i class="fa-brands fa-facebook-f"></i></span>
+                          </div> 
+                        </div>
+                          <div class="icon">
+                            <div class="service-ico mb-2 ">
+                              <span class="ico-circle d-flex justify-content-center align-items-center me-2"><i class="fa-brands fa-twitter"></i></span>
+                            </div> 
+                          </div>
+                          <div class="icon">
+                            <div class="service-ico mb-2 ">
+                              <span class="ico-circle d-flex justify-content-center align-items-center me-2"><i class="fa-brands fa-google-plus-g"></i></span>
+                            </div>
+                          </div> 
+                          <div class="icon">
+                            <div class="service-ico mb-2 ">
+                              <span class="ico-circle d-flex justify-content-center align-items-center"><i class="fa-brands fa-pinterest"></i></span>
+                            </div> 
+                          </div>
+                        </div>
+                </div>
+            </div>
+            <p class="copy">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
